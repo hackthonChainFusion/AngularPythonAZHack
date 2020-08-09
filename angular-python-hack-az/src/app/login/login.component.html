@@ -1,0 +1,28 @@
+<div class = "MainContainer">
+    <div class="NavContainer">
+            <fa-icon [icon]="listIcon" class = "iconImage"></fa-icon>
+            <span class="WelcomeMsg">Welcome</span>
+            <div class="spacer"></div>
+    </div>
+    <div class = "LoginContainer">
+        <span class="LoginHeader">
+            Application Login
+        </span>
+        <div >
+            <form class="LoginSubCont" (ngSubmit) = "onSubmit()" >
+                <input type = "text" 
+                placeholder="USER NAME OR EMAIL" 
+                id = "usernameInput" 
+                class = "inputBox"
+                (keyup)="onKey($event)"
+                />
+                <div class = "loginSpace">
+                    <span>
+                        we will not share your user or email address
+                    </span>
+                </div>
+                <button type="submit" class = "submitBtnCls">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
