@@ -21,4 +21,4 @@ in Another terminal
 # Azure AD setup
 This package is comes with Azure AD integration. So you need to enter your required Azure Client id and tennant id in auth-utils.js file. This file is present in
 
-src\login\auth-utils.js
+src/app/login/auth-utils.js
